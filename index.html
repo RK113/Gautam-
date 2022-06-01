@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    
+    <style>
+    /* Created by ㅤ  ㅤㅤCrescent🌙🎵🎶 */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    color:lightblue;
+}
+
+.main{
+    height:100vh;
+    width:100vw;
+    background-color: #11f0ff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+
+     background-size:110vw 165vh;
+     display:grid;
+     place-items:center;
+     overflow:hidden;
+     position:fixed;
+}
+
+.baln{
+    height:80vh;
+    width:90vw;
+    background-color:transparent;
+    position:relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    overflow:hidden;
+    bottom:8vh;
+    
+}
+
+.balloon{
+   position:absolute;
+   top:1%;
+   height: 70vw;
+   width: 70vw;
+   border-radius:100%;
+   border-bottom-left-radius: 225%;
+   border-bottom-right-radius: 225%;
+   border-top-left-radius: 225%;
+   border-top-radius: 120%;
+   background-color:green;
+   transform: rotate(135deg);
+   z-index: 2;
+   background-color: #330033;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='61' height='61' viewBox='0 0 90 90'%3E%3Ccircle fill='%2306B' cx='45' cy='45' r='10'/%3E%3Cg fill='%23800' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='10'/%3E%3Ccircle cx='90' cy='90' r='10'/%3E%3Ccircle cx='90' cy='0' r='10'/%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3C/g%3E%3C/svg%3E");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);           
+    
+}
+
+
+.box{
+    position:absolute;
+    top:47%;
+    height:25%;
+    width:30%;
+    background-color:black;
+    /*display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;*/
+    overflow:hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);           
+    
+    
+}
+
+.b{
+    display:inline-block;
+    /*position:absolute;*/
+    margin:0%;
+    height:90%;
+    width:40%;
+    background-color:cyan;
+    
+}
+
+.box1{
+    margin-left:7%;
+    
+}
+
+.textbox{
+    position:absolute;
+    top:70%;
+    height: 26%;
+    width:50%;
+    background-color:black;
+    text-align:center;
+    padding-top:5px;
+    font-size:6vmin;
+    text-align:center;
+    font-family:'Bevan';
+    color:pink;
+    text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5; 
+    border-radius: 11px;
+    background: #000000;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);           
+    
+}
+
+.line{
+    position:absolute;
+    width:100%;
+    height:5%;
+    background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    z-index:3;
+    animation: topslide 2s 25s both;
+    top:0%;
+}
+.line1{
+    top:3%;
+    transform:rotate(-2deg);
+}
+.line2{
+    top:10%;
+    transform:rotate(2deg);
+}
+
+.circle{
+    position:relative;
+    height:50px;
+    width:50px;
+    background-color:var(--color,red);
+    border-radius:50%;
+    display:inline-block;
+    animation:anim 8s both;
+    animation-iteration-count:infinite;
+}
+.cloud{ 
+    width: 250px; 
+    height: 60px; 
+    border-radius:50px; 
+    background: #fff; 
+    transform:rotate(-5deg);
+    opacity:0;
+} 
+
+.cloud:before{ 
+    position: absolute; 
+    content:""; 
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    background: #fff; 
+    bottom:30px; 
+    left:30px; 
+}
+ 
+.cloud:after{ 
+   position: absolute; 
+   content:""; 
+   width: 140px; 
+   height: 120px;
+   border-radius: 50%; 
+   background: #fff; 
+   bottom: 20px; 
+   left:90px; 
+}
+
+.cloud1{ 
+    position: absolute; 
+    top:30%;
+    left:0;
+    opacity:0.6;
+}
+.cloud2{ 
+    position: absolute; 
+    top:55%;
+    right:0;
+    transform:rotate(2deg);
+    opacity:0.6;
+} 
+.cloud13{
+    position:absolute;
+    
+}
+.cloud4{ 
+    position: absolute; 
+    top:80%;
+    left:0;
+    transform:rotate(2deg);
+    opacity:0.6;
+}
+
+.profile{
+      height:60%;
+      width:60%;
+      border-radius:55%;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%) rotate(-130deg);       background-image:url("Gautam.png");
+      background-size:90%, 90%;
+      box-shadow:0 0px 2px  #08E8DE, 0 0px 5px #08E8DE, 0 0 10px #08E8DE;  
+}
+
+
+
+
+
+
+.line2{
+    animation:line 2s both;
+}
+
+.line1{
+    animation:line 2.4s both;
+}
+    
+@keyframes line {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.baln{
+    animation:bal 15s 3s both;
+}
+
+@keyframes bal {
+  0% {
+    transform: translateY(100%) translateX(-100%) rotate(15deg);
+    opacity: 0;
+  }
+  20%{
+      transform:translateY(80%) translateX(-20%) rotate(-15deg);
+  }
+  40%{
+      transform:translateY(60%) translateX(20%) rotate(10deg);
+  }
+  60%{
+      transform:translateY(40%) translateX(30%) rotate(-10deg);
+  }
+  80%{
+      transform:translateY(20%) translateX(-10%) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main1{
+    animation:page2 3s 18s both;
+}
+
+.page2{
+    animation:page2 3s 20s both;
+}
+
+
+@keyframes page2{
+    from{
+        opacity:0;
+    }
+}
+</style>
+
+
+    </head>
+    <body>
+    <audio controls style=" display:none;" loop   id="a"  >
+ <source src="https://dl.dropbox.com/s/sbxdlfmmbnti43i/khushiyo-ke-savan-ko-ye-din-lata.MP3?row=0">
+    <script>
+     Swal.fire('Happy birthday Runaway Potter Sir🎊\n A small try🧗‍♀️ to express my gratitude🤗 \n It is quite simple😕 and boring😥 as I am a beginner😔 ')
+        </script>
+      </audio> 
+        <main class="main">
+        <div class="cloud cloud1"></div>
+         <div class="cloud cloud2"></div>
+         <div class="cloud cloud13"></div>
+         <div class="cloud cloud4"></div>
+            <div class="baln">
+                <div class="balloon">
+                    <div class="profile"></div>
+                </div>
+                <div class="box">
+                 <div class="b box1"></div>
+                 <div class="b box2"></div>   
+                </div>
+                <div class="textbox">HAPPY<br>  BIRTH<br>DAY</div>
+                </div>
+                <div class="line line1">
+             <div class="circle circle1"></div>
+             <div class="circle circle2"></div>
+             <div class="circle circle3"></div>
+             <div class="circle circle4"></div>
+             <div class="circle circle5"></div>
+             <div class="circle circle6"></div>
+             <div class="circle circle7"></div>
+             <div class="circle circle8"></div>
+             <div class="circle circle9"></div>
+             <div class="circle circle10"></div>                
+             <div class="circle circle11"></div>
+             <div class="circle circle12"></div>
+             <div class="circle circle13"></div>
+             <div class="circle circle14"></div>
+             <div class="circle circle15"></div>
+             <div class="circle circle16"></div>
+             <div class="circle circle17"></div>
+             <div class="circle circle18"></div>
+             <div class="circle circle19"></div>
+             <div class="circle circle20"></div>
+             <div class="circle circle21"></div>
+             <div class="circle circle22"></div>
+             <div class="circle circle23"></div>
+             <div class="circle circle24"></div>
+             <div class="circle circle25"></div>
+         </div>
+         <div class="line line2">
+             <div class="circle circle1"></div>
+             <div class="circle circle2"></div>
+             <div class="circle circle3"></div>
+             <div class="circle circle4"></div>
+             <div class="circle circle5"></div>
+             <div class="circle circle6"></div>
+             <div class="circle circle7"></div>
+             <div class="circle circle8"></div>
+             <div class="circle circle9"></div>
+             <div class="circle circle10"></div>                
+             <div class="circle circle11"></div>
+             <div class="circle circle12"></div>
+             <div class="circle circle13"></div>
+             <div class="circle circle14"></div>
+             <div class="circle circle15"></div>
+             <div class="circle circle16"></div>
+             <div class="circle circle17"></div>
+             <div class="circle circle18"></div>
+             <div class="circle circle19"></div>
+             <div class="circle circle20"></div>
+             <div class="circle circle21"></div>
+             <div class="circle circle22"></div>
+             <div class="circle circle23"></div>
+             <div class="circle circle24"></div>
+             <div class="circle circle25"></div>
+         </div> 
+         
+        </main>
+        
+        <main class="main1">
+            
+        </main>
+        <script>
+        				window.addEventListener("mouseover",play);
+window.addEventListener("click",play);
+function play() { document.getElementById("a").play();
+}
+        </script>
+    </body>
+</html>
